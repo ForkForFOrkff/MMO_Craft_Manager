@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMO Craft Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar">
+        <button class="menu-button" onclick="loadContent('resources')">
+            <span class="icon">📦</span>
+            <span>Ресурсы</span>
+        </button>
+        <button class="menu-button" onclick="loadContent('craft')">
+            <span class="icon">⚒️</span>
+            <span>Крафт</span>
+        </button>
+        <button class="menu-button" onclick="loadContent('transactions')">
+            <span class="icon">💰</span>
+            <span>Перекупство</span>
+        </button>
+        <button class="menu-button" onclick="loadContent('analytics')">
+            <span class="icon">📊</span>
+            <span>Аналитика</span>
+        </button>
+        <button class="menu-button" onclick="loadContent('settings')">
+            <span class="icon">⚙️</span>
+            <span>Настройки</span>
+        </button>
+    </div>
+    <div id="content">
+        <h1>Добро пожаловать в MMO Craft Manager!</h1>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="statistics-page">
+        <h1>Статистика</h1>
+        <button id="backButton" onclick="goBack()">Назад</button>
+
+        <!-- Таблица архивной статистики -->
+        <div class="table-container">
+            <h2>Архивная статистика</h2>
+            <table id="archiveTable">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Статистика за день</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Данные будут добавлены динамически -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Абсолютная статистика -->
+        <div class="absolute-stats">
+            <h2>Абсолютная статистика</h2>
+            <div id="absoluteStats">
+                <!-- Данные будут добавлены динамически -->
+            </div>
+        </div>
+
+        <!-- Модальное окно для детальной статистики -->
+        <div id="detailModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalDate"></h2>
+                <div id="modalStats"></div>
+                <button onclick="closeModal()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="statistics.js"></script>
+</body>
+</html>
